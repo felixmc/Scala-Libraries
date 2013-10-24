@@ -14,18 +14,24 @@ class ConsoleMenu (_title: String)
 	{
  		println()
 		menuItems(index).action()
-		ConsoleIO.waitForEnter()
+		
+		if (menuItems(index).pause) ConsoleIO.waitForEnter()
+		else println
 	}
 	
 	def printItems ()
 	{
 		for (i <- (1 to menuItems.length))
-			println(i + ". " + menuItems(i - 1).label)
+		{
+			val padding = " " * (menuItems.size.toString.size - i.toString.size)
+			printf("%d.%s %s\n", i, padding, menuItems(i - 1).label)
+		}
 	}
 	
 	def promptMenu ()
 	{
 		println(title)
+		println("=" * title.size)
 		printItems()
 		
 		var index : Integer = null;
