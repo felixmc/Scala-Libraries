@@ -1,4 +1,4 @@
-package com.felixmilea.profiling
+package com.felixmilea.scala.profiling
 
 class FunctionTimer extends Timer
 {

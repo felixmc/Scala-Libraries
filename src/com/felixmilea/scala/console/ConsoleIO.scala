@@ -1,6 +1,6 @@
 
 
-package com.felixmilea.console
+package com.felixmilea.scala.console
 
 object ConsoleIO
 {

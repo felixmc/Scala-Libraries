@@ -1,9 +1,9 @@
-package com.felixmilea.console
+package com.felixmilea.scala.console
 
 class ConsoleMenu (_title: String)
 {
 	private var menuItems : List[MenuItem] = List()
-	private val title : String = _title
+	var title : String = _title
 	
 	def addItem (item: MenuItem)
 	{
