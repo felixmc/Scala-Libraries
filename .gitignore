@@ -1,5 +1,4 @@
 *.pydevproject
-.project
 .metadata
 bin/**
 tmp/**
@@ -9,7 +8,6 @@ tmp/**/*
 *.swp
 *~.nib
 local.properties
-.classpath
 .settings/
 .loadpath
 .cache
@@ -25,3 +23,4 @@ local.properties
 
 # PDT-specific
 .buildpath
+/bin
